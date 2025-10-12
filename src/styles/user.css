@@ -1,0 +1,117 @@
+/* .register-container { max-width: 400px; margin: 40px auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+.register-form { display: flex; flex-direction: column; gap: 1rem; }
+.register-form input, .register-form select, .register-form button { padding: 0.75rem; border-radius: 4px; border: 1px solid #ccc; }
+.register-form button { background: #28a745; color: #fff; border: none; cursor: pointer; }
+.register-form button:hover { background: #1e7e34; } */
+
+
+/* Register.css */
+
+.user-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-container{
+  padding-top: 30px ;
+}
+.user-form {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.8s ease-in-out;
+    width: 40%;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+}
+
+.user-container h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.user-form input,
+.user-form select {
+    width: 85%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.user-form select option{
+    color: black;
+}
+.user-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-form input:focus,
+.user-form select:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.regiuser-form select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.user-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.user-form button:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.user-form button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.userster-form div {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

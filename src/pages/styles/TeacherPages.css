@@ -1,0 +1,914 @@
+ :root {
+  --primary-color: #185a9d;
+  --gradient-primary: linear-gradient(135deg, #43cea2, #185a9d);
+  --gradient-hover: linear-gradient(135deg, #185a9d, #43cea2);
+
+  --bg-light: rgba(255, 255, 255, 0.15);
+  --bg-medium: rgba(255, 255, 255, 0.2);
+  --bg-strong: rgba(255, 255, 255, 0.3);
+
+  --text-color: #000;
+  --error-color: red;
+
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  --font-lg: 2rem;
+  --font-md: 1.2rem;
+  --font-base: 1rem;
+}
+
+/* Generic Containers */
+.profile-container,
+.add-course-container,
+.notes-upload-container,
+.create-class-container,
+.add-students-container,
+.attendance-container,
+.quiz-container {
+    max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  background: var(--bg-light);
+  backdrop-filter: blur(10px);
+  color: var(--text-color);
+}
+.add-course-container,
+.notes-upload-container,
+.create-class-container,
+.add-students-container,
+.attendance-container,
+.quiz-container {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles */
+.profile-title,
+.add-course-title,
+.notes-upload-title,
+.create-class-title,
+.add-students-title,
+.attendance-title,
+.quiz-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* Dashboard Link */
+.dashboard-link {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.dashboard-link a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Profile Image */
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--primary-color);
+}
+
+/* Forms */
+.profile-form,
+.add-course-form,
+.notes-upload-form,
+.create-class-form,
+.add-students-form,
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+.form-group input{
+    padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid;
+  font-size: 1rem;
+  background: var(--bg-medium);
+  color: var(--text-color);
+  width: 94%;
+}
+.form-group textarea{
+    padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid;
+  font-size: 1rem;
+  background: var(--bg-medium);
+  color: var(--text-color);
+  width: 94%;
+}
+.form-group select {
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: 2px solid;
+  font-size: 1rem;
+  background: var(--bg-medium);
+  color: var(--text-color);
+  width: 98%;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-group input[type="date"] {
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn,
+.btn-secondary {
+  padding: 12px 18px;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.btn {
+  color: #fff;
+  background: var(--gradient-primary);
+}
+.btn:hover {
+  background: var(--gradient-hover);
+}
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-secondary {
+  background: white;
+  border: 3px solid var(--primary-color);
+  color: var(--text-color);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Display Section */
+.profile-display p,
+.student-item,
+.attendance-row {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.6rem;
+}
+
+/* Error & Loading */
+.loading-text,
+.error-message {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.error-message {
+  color: var(--error-color);
+  background: var(--bg-medium);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+}
+
+/* Extra Components */
+.students-scroll {
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+  background: var(--bg-medium);
+}
+.student-item input[type="checkbox"],
+.status-options input {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.attendance-table {
+    margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-medium);
+}
+.attendance-header {
+  font-weight: 700;
+  background: var(--bg-light);
+  color: var(--primary-color);
+}
+.attendance-header,
+.attendance-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.question-card {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.question-card input {
+  padding: 0.6rem;
+  border-radius: var(--radius-md);
+  border: 2px solid;
+  background: var(--bg-medium);
+  font-size: 0.95rem;
+}
+
+.class-label{
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.student-item label {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+
+
+
+
+.add-course-container{
+  background: white;
+}
+
+.add-course-container a{
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 600;
+  list-style: none;
+  text-decoration: none;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.submissions-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.submissions-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #185a9d;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.submissions-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #185a9d;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* List Container */
+.submissions-list {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Items */
+.submission-item {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submission-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Student Info */
+.submission-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 0.5rem;
+}
+
+.submission-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.25rem 0;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  background: rgba(255, 255, 255, 0.2);
+  color: #185a9d;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Buttons (if you add later) */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-3px);
+}
+
+
+
+
+/* TeacherPages.css */
+
+/* Container */
+.quizzes-container {
+  min-height: 100vh;
+  padding: 2rem;
+  /* background: linear-gradient(135deg, #667eea, #764ba2); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.quizzes-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #185a9d;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.quizzes-title::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #185a9d;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Quizzes List */
+.quizzes-list {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quizzes-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Quiz Item */
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.quiz-item:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Quiz Info */
+.quiz-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #333;
+}
+
+/* Quiz Actions */
+.quiz-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  margin-bottom: 1.5rem;
+}
+
+.btn-secondary {
+  font-size: 0.9rem;
+}
+
+
+.course-actions button{
+  padding: 8px 6px;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.course-actions button:hover{
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-3px);
+}
+
+
+/* TeacherPages.css */
+
+/* Container */
+.add-course-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title */
+.add-course-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #185a9d;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Teacher Courses link */
+.add-course-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #185a9d;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.add-course-container a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Form */
+.add-course-form {
+  width: 100%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #185a9d;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid black;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #185a9d;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(24, 90, 157, 0.3);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+/* =======================
+   Edit Course Page Styles
+=========================*/
+.edit-course-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page Title */
+.edit-course-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #185a9d;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/* Form Group */
+.form-group {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #185a9d;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid black;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #185a9d;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(24, 90, 157, 0.3);
+}
+
+/* Notes & Quiz Sections */
+.edit-course-container h2 {
+  color: #185a9d;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Note & Quiz Blocks */
+.note-block,
+.quiz-block {
+  width: 100%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.note-block input,
+.note-block textarea,
+.quiz-block input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.2);
+  color: #185a9d;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.note-block input:focus,
+.note-block textarea:focus,
+.quiz-block input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(24, 90, 157, 0.3);
+}
+
+/* Buttons */
+button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+}
+
+/* Save Button Area */
+.form-actions {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Container */
+.topper-container {
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #185a9d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.topper-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Card */
+.topper-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.topper-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.topper-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Name & Percentage */
+.topper-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.topper-percentage {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Actions */
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.edit-form input,
+.edit-form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.edit-form button {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+}

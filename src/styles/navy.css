@@ -1,0 +1,114 @@
+/* :root {
+  --dflex: flex;
+  --primary: #185a9d;
+  --lightgray: #b3b3b3;
+  --light: white;
+  --dark: black;
+
+  --gradient-bg: linear-gradient(135deg, #667eea, #764ba2);
+  --form-bg: rgba(255, 255, 255, 0.15);
+  --other-bg: rgba(255, 255, 255, 0.2);
+  --btn-bg: linear-gradient(135deg, #43cea2, #185a9d);
+  --btn-hover: linear-gradient(135deg, #185a9d, #43cea2);
+} */
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid #b3b3b3;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: var(--dflex);
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 100;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo */
+.logo {
+  margin-left: 50px;
+  display: var(--dflex);
+  align-items: center;
+}
+.logo img {
+  height: 80px;
+  width: 150px;
+  border-radius: 8px;
+}
+.logo-icon {
+  padding: 30px 0;
+}
+.logo-icon i {
+  font-size: 1.2rem;
+  padding-left: 10px;
+  color: var(--light);
+  transition: color 0.3s ease;
+}
+.logo-icon i:hover {
+  color: #185a9d;
+}
+
+/* Middle Navigation */
+.middle-nav {
+  /* padding-left: 110px; */
+}
+.middle-nav ul {
+  display: var(--dflex);
+  margin: 0;
+  padding: 0;
+  /* gap: 1rem; */
+}
+.middle-nav ul li {
+  border-left: 1px solid #b3b3b3;
+  list-style: none;
+  padding: 30px 10px;
+}
+#contact-border {
+  border-right: 1px solid #b3b3b3;
+}
+
+/* Links */
+.middle-nav ul li a {
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  color: var(--light);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.middle-nav ul li a:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));;
+  color: white;
+}
+
+/* Buttons */
+
+/* Right side */
+.right-side {
+  padding-top: 18px;
+  padding-right: 10px;
+}
+.right-side a button {
+  padding: 10px 30px;
+}
+
+/* Logout button */
+#logout {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  transition: all 0.3s ease;
+}
+#logout:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

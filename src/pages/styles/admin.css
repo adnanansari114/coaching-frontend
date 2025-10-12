@@ -1,0 +1,290 @@
+/* AdminProfile.css */
+
+.admin-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  /* background: rgba(255, 255, 255, 0.15); */
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+}
+
+.admin-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.admin-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.admin-message.success {
+  color: #43cea2;
+}
+
+.admin-message.error {
+  color: #ff6b6b;
+}
+
+.admin-field {
+  margin-bottom: 1.5rem;
+}
+
+.admin-field label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.admin-input,
+.admin-text {
+  width: 95%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.admin-input {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.admin-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.admin-text {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.admin-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.admin-btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.admin-btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* AdminApproval.css */
+
+.admin-approval-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+  color: black;
+}
+
+.admin-approval-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.admin-message {
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.admin-message.error {
+  color: #ff6b6b;
+}
+
+.admin-message.success {
+  color: #43cea2;
+}
+
+/* Table Styling */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border-radius: 12px;
+  color: black;
+}
+
+.admin-table thead {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: black;
+}
+
+.admin-table th {
+  font-weight: 600;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+/* Buttons */
+.admin-btn {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.admin-status {
+  font-weight: 600;
+  color: #43cea2;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main container */
+.dashboard-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading and error */
+.loading-text {
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+  font-size: 1.2rem;
+}
+.error-text {
+  text-align: center;
+  margin-top: 40px;
+  color: #ff4d4f;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card Style */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Heading */
+.dashboard-card h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Card Numbers */
+.dashboard-card p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,153 @@
+.review-form-container,
+.teacher-reviews-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #185a9d;
+}
+
+.review-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.review-form label {
+  font-weight: 600;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 95%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.review-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.review-btn:hover {
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+}
+
+.review-message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.average-rating {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.review-card {
+  padding: 1rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.review-comment {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+
+.terms-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.terms-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.terms-updated {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+  text-align: justify;
+  color: #444;
+}
+
+.terms-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.terms-footer a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms-footer a:hover {
+  text-decoration: underline;
+}
