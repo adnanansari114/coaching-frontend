@@ -6,7 +6,7 @@ export const socket = io(URL, { autoConnect: true });
 
 
 
-// import { io } from "socket.io-client";
+// import { io } from "socket.io-client"; 
 
 // const URL = 'http://localhost:5000'; // Replace with your backend URL
 

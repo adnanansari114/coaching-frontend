@@ -884,3 +884,355 @@ footer{
 .message-form input{
   margin: 5px 5%;
 } */
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .container{
+      width: 100%;
+      padding: 0 6%;
+  }
+  nav::before{
+      height: 850px;
+  }
+  nav{
+      height: 476px;
+  }
+  .navbar {
+      display: var(--dflex);
+      justify-content: space-evenly;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      border-bottom: 0px;
+  }
+
+  #myicon {
+      opacity: 1;
+      position: absolute;
+      top: 38px;
+      right: 39px;
+      cursor: pointer;
+      font-size: 2.5rem;
+  }
+
+  #chk {
+      opacity: 0;
+      position: relative;
+      top: -50px;
+      left: -43px;
+      margin-left: auto;
+      cursor: pointer;
+      font-size: 2rem;
+      height: 32px;
+      width: 28px;
+  }
+
+  .logo {
+      margin-top: 15px;
+      margin-left: 20px;
+      display: var(--dflex);
+      flex-direction: column;
+  }
+
+  .logo-icon {
+      margin-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 0;
+  }
+
+  .middle-nav {
+      padding-left: 0px;
+      background-color: var(--secondary);
+      opacity: 0.8;
+  }
+  /* .right-side input{
+      display: var(--dflex);
+      flex-direction: column;
+      position: absolute;
+      top: 148px;
+      left: 28px;
+      width: 60%;
+      transition: all 0.5s ease;
+  }
+  .middle-nav ul {
+      background-color: var(--secondary);
+      display: var(--dflex);
+      flex-direction: column;
+      position: absolute;
+      top: 205px;
+      left: -500px;
+      width: 100%;
+      transition: all 0.5s ease;
+      padding-bottom: 25px;
+  }
+  
+  #chk:checked ~ .middle-nav ul{
+      left: 0px;
+  } */
+
+   .middle-nav{
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #6056a200;
+   }
+   .middle-nav ul{
+    flex-direction: column;
+   }
+  .middle-nav ul li {
+      padding-top: 20px;
+      padding-bottom: 0;
+  }
+
+  .right-side {
+      padding-bottom: 30px;
+      margin-left: 30px;
+  }
+  .banner-content{
+      top: 395px;
+      left: 0;
+      width: 100%;
+  }
+  .banner-content h1{
+      padding-left: 15px;
+      font-size: 2.8rem;
+      line-height: 3rem;
+  }
+  .banner-content p{
+      padding-left: 15px;
+      font-size: 1.1rem;
+  }
+  #life-coach{
+      margin-left: 10px;
+  }
+  .banner{
+      width: 100%;
+  }
+  #guide{
+      margin: 35px;
+  }
+
+  /* contact */
+  .phone h3{
+      font-size: 18px;
+  }
+  .phone p{
+      font-size: 16px;
+  }
+  .contact-btn-one a{
+      margin: 15px 20px;
+  }
+
+
+  .explore{
+      padding-bottom: 30px;
+  }
+  .explore-btn{
+      padding-bottom: 30px;
+  }
+  .explore-content h1{
+      margin: 0;
+      font-size: 2.5rem;
+      line-height: 2rem;
+  }
+  .explore-content p{
+      padding-top: 10px;
+  }
+  .explore-card{
+      flex-direction: column;
+  }
+  .card-sec{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  .detail-sec{
+      flex-direction: column;
+      width: 87%;
+      padding: 1rem 0;
+  }
+  #detail{
+      height: 700px;
+  }
+  #detail::before{
+      height: 700px;
+  }
+  .detail-card{
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+  .detail-card p{
+      padding-top: 10px;
+  }
+  .detail-card h5{
+      font-size: 21px;
+  }
+  .containertwo{
+      box-sizing:border-box;
+      max-width: 100%;
+      margin: 0px;
+      padding: 0 8%;
+  }
+  .aboutme{
+      flex-direction: column;
+      height: 1050px;
+  }
+  .about-left-sec{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  .about-left-sec h2{
+      font-size: 2.7rem;
+      line-height: 2.8rem;
+  }
+  .about-left-sec img{
+      padding-bottom: 20px;
+  }
+  .about-right-sec{
+      width: 100%;
+      margin-bottom: 150px;
+  }
+  .about-right-sec img{
+      width: 260px;
+      height: 260px;
+  }
+  .experience{
+      top: 200px;
+      left: 10px;
+  }
+  .result-sec{
+      flex-direction: row;
+  }
+  .result-card{
+      width: 100%;
+  }
+  .help-student p{
+      font-size: 1.2rem;
+  }
+  .help-sec{
+      flex-direction: column;
+  }
+  .help-card{
+      width: 100%;
+      margin: 0px 0px 35px 0px ;
+  }
+  .coaching-work-sec{
+      flex-direction: column;
+  }
+  .coach-right-sec{
+      flex-direction: column;
+      width: 100%;
+  }
+  .coach-sec-img{
+      width: 100%;
+  }
+  .coach-sec-img:before{
+      height: 70px;
+      width: 70px;
+      content: "";
+      top: 35%;
+      right: 0px;
+  }
+  .coach-sec-img img{
+      width: 225px;
+  }
+  .coach-detail{
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-evenly;
+  }
+  .coach-detail i{
+      padding-bottom: 10px;
+      margin: 0;
+  }
+  .coach-detail-content{
+      text-align: center;
+      margin: 0;
+  }
+  .latest-course{
+      flex-direction: column;
+  }
+  .course-card{
+      width: 100%;
+  }
+  .cousre-card-img img{
+      top:-60px;
+      right: 15%;
+  }
+  .subscribe{
+      flex-direction: column;
+      height: 300px;
+      text-align: center;
+  }
+  .detail p{
+      margin: 0;
+  }
+  .subs-btn{
+      margin: 0;
+  }
+  .subs-btn input{
+      padding: 10px 80px 10px 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+  .subs-btn a{
+      padding: 12px 25px;
+  }
+  .footersec{
+      flex-direction: column;
+  }
+  .footer-sec-one{
+      width: 100%;
+      padding-bottom: 30px;
+  }
+  .footer-two{
+      padding-bottom: 30px;
+      width: 100%;
+      margin: 0;
+  }
+  .footer-two h2{
+      margin: 0;
+  }
+  .footer-two ul{
+      margin-left: 10px;
+  }
+  .footer-three{
+      padding-bottom: 30px;
+      width: 100%;
+      margin: 0;
+  }
+  .footer-three ul{
+      margin-left: 10px;
+  }
+  .footer-three h2{
+      margin: 0;
+  }
+  .footer-four{
+      width: 100%;
+  }
+  .contact-us{
+      flex-direction: column;
+  }
+  .contact-card i{
+      margin-left: 15px;
+  }
+  .contact-card{
+      padding-bottom: 20px;
+      width: 100%;
+  }
+  .phone{
+      margin-left: 5px;
+      margin-right: 0;
+  }
+  .contact-btn{
+      padding-top: 35px;
+  }
+  .contact-btn a{
+      margin: 15px 52px;
+  }
+  #result{
+      margin-top: 200px;
+  }
+}

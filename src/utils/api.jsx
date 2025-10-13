@@ -1,4 +1,4 @@
-// src/utils/api.js
+src/utils/api.js
 import axios from "axios";
 
 const API = axios.create({
@@ -24,7 +24,7 @@ export default API;
 
 
 
-// import axios from "axios";
+import axios from "axios";
 
 // const API = axios.create({
 //   baseURL: "http://localhost:5000", // 🔹 yaha apna backend ka base URL lagana

@@ -784,3 +784,14 @@
 .question-review-card strong {
   color: #185a9d;
 }
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .course-grid{
+    flex-direction: column;
+    width: 95%;
+  }
+  .course-card{
+    width: 90%;
+  }
+}

@@ -912,3 +912,18 @@ button:hover {
 .edit-form button:hover {
   background: linear-gradient(135deg, #185a9d, #43cea2);
 }
+@media only screen and (min-width:320px) and (max-width:480px){
+  .user-form {
+      width: 72%;
+  } 
+  .add-course-form{
+    width: 90%;
+  }
+  .topper-grid{
+    flex-direction: column;
+    align-items: center;
+  } 
+  .topper-card{
+    margin-bottom: 20px;
+  }
+}

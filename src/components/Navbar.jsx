@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Navbar.css';
+import { LuSquareMenu } from "react-icons/lu";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -30,6 +31,8 @@ export default function Navbar() {
             <i className="fa fa-youtube animate__animated animate_-fadeOut wow" aria-hidden="true"></i>
           </div> */}
         </div>
+        <i className="fa fa-bars" id="myicon" aria-hidden="true"><LuSquareMenu /></i>
+        <input type="checkbox" name="" id="chk" />
         <div className="middle-nav">
           <ul>
             <li><Link to="/">Home</Link></li>
