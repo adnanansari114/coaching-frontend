@@ -56,16 +56,17 @@ export default function Home() {
   };
 
   const startCounting = () => {
-    detailRefs.current.forEach((ref) => {
-      if (ref) {
-        const target = parseInt(ref.getAttribute("data-target"));
-        const duration = 2000;
-        if (isElementInViewport(ref)) {
-          animateCountUp(ref, target, duration);
-        }
+  detailRefs.current.forEach((ref) => {
+    if (ref && !ref.counted) { // ✅ only if not counted yet
+      const target = parseInt(ref.getAttribute("data-target"));
+      const duration = 2000;
+      if (isElementInViewport(ref)) {
+        animateCountUp(ref, target, duration);
+        ref.counted = true; // ✅ mark as counted
       }
-    });
-  };
+    }
+  });
+};
 
   useEffect(() => {
     window.addEventListener("scroll", startCounting);
