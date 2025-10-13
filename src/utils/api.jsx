@@ -1,8 +1,8 @@
-src/utils/api.js
+// src/utils/api.js
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL, // 🔹 yaha apna backend ka base URL lagana
+  baseURL: 'http://localhost:5000', // 🔹 yaha apna backend ka base URL lagana
   headers: {
     "Content-Type": "application/json",
   }, 
@@ -24,7 +24,7 @@ export default API;
 
 
 
-import axios from "axios";
+// import axios from "axios";
 
 // const API = axios.create({
 //   baseURL: "http://localhost:5000", // 🔹 yaha apna backend ka base URL lagana
