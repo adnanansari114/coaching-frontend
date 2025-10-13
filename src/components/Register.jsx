@@ -37,11 +37,11 @@ export default function Register() {
           email: form.email 
       });
       // const data = await res.json();
-      if (!res.data) {
-        setError(res.data.message || 'Failed to send OTP.');
-      } else {
-        setSuccess('OTP sent to your email.');
+      if (res.data && res.data.message) {
+        setSuccess(res.data.message);
         setOtpSent(true);
+      } else {
+        setError('Failed to send OTP.');
       }
     } catch (err) {
       setError('Server error.');
