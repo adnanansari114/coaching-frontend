@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000', // 🔹 yaha apna backend ka base URL lagana
+  baseURL: 'https://coaching-backend-t04z.onrender.com', // 🔹 yaha apna backend ka base URL lagana
   headers: {
     "Content-Type": "application/json",
   }, 
