@@ -193,7 +193,7 @@ header::before{
   position: absolute;
   color: white;
   top: 280px;
-  width: 46%;
+  width: 44%;
 }
 #life-coach{
   padding: 15px 30px;
@@ -206,7 +206,7 @@ header::before{
   background-color: var(--lightgray);
 }
 .banner-content h1{
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 4.8rem;
 }
 .banner-heading{
@@ -646,113 +646,6 @@ header::before{
   font-weight: 500;
 }
 
-/* Learn from me */
-/* 
-.learn{
-  text-align: center;
-  padding-top: 30px;
-}
-.learn a{
-  padding: 8px 15px;
-  border: 2px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 600;
-  font-size: 0.8rem;
-  background-color: #667eea;
-}
-.learn h1{
-  font-size: 4rem;
-  padding-top: 15px;
-  color: var(--dark);
-}
-.learn p{
-  color: var(--lightgray);
-  padding-bottom: 3rem ;
-}
-.latest-course{
-  display: var(--dflex);
-  justify-content: space-evenly;
-  flex-direction: row;
-  width: 100%;
-}
-.course-card{
-  width: 30%;
-  padding-top: 1.5rem;
-}
-.cousre-card-img{
-  display: var(--dflex);
-  flex-direction: row;
-  justify-content: space-evenly;
-} */
-/*
-.cousre-card-img img{
-  content: "";
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  top: -335%;
-  right: 20%;
-}*/
-/* .cousre-card-img a{
-  padding: 110px 40%;
-  background-color: burlywood;
-  text-align: center;
-}
-.cousre-card-img a img{
-  padding: 0;
-}
-.course-detail-card h3{
-  padding-top: 20px;
-  margin: 0px 24px;
-  color: var(--dark);
-  font-size: 1.4rem;
-  text-align: left;
-}
-.course-detail-card p{
-  margin: 0px 30px;
-  text-align: left;
-  color: var(--lightgray);
-} */
-
-/* subscribe */
-
-/*
-.subscribe{
-  background-color: #667eea;
-  height: 130px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-}
-.detail p{
-  font-size: 1.4rem;
-  font-weight: 600;
-  padding: 52px 0;
-  margin-left: 30px;
-}
-.subs-btn{
-  margin-right: 30px;
-  padding: 38px 0;
-}
-.subs-btn input{
-  padding: 18px 150px 18px 15px;
-  border-radius: 5px;
-}
-.subs-btn a:hover{
-  background-color: var(--primaryhover);
-}
-.subs-btn a{
-  padding: 16px 25px;
-  font-size: 19px;
-  background-color: var(--primary);
-  text-decoration: none;
-  color: var(--light);
-  border: 2px;
-  border-radius: 5px;
-} */
 
 /* footer */
 
@@ -809,20 +702,6 @@ footer{
   width: 25%;
   padding-right: 12px;
 }
-/* .footer-three ul{
-  margin-left: 40px;
-  display: var(--dflex);
-  flex-direction: column;
-}
-.footer-three ul li{
-  list-style: none;
-  padding-bottom: 8px;
-}
-.footer-three ul li a{
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: var(--light);
-} */
 .footer-three h2{
   /* margin-left: 30px; */
   padding-bottom: 15px;
@@ -835,13 +714,6 @@ footer{
 .footer-four{
   width: 25%;
   padding-right: 12px;
-  /* padding-bottom: 0px;
-  width: 32%;
-  background-color: var(--lightgray);
-  text-align: center;
-  display: var(--dflex);
-  flex-direction: column;
-  justify-content: space-evenly; */
 }
 .footer-four h2{
   padding-bottom: 15px;
@@ -851,40 +723,6 @@ footer{
   line-height: 1.8rem;
   font-size: 1.1rem;
 }
-/* .footer-four h3{
-  padding-top: 20px;
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
-.footer-four input{
-  padding: 15px 80px 15px 10px;
-  margin-bottom: 15px;
-}
-.footer-four textarea{
-  padding: 5px 86px 30px 10px;
-  margin: 5px 15px 5px 15px;
-}
-.footer-four button:hover{
-  background-color: var(--primaryhover);
-}
-.footer-four button{
-  padding: 15px 0px;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: var(--primary);
-  color: var(--light);
-}
-.message-form{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 10px 0%;
-}
-.message-form input{
-  margin: 5px 5%;
-} */
-
 
 
 
@@ -948,30 +786,6 @@ footer{
       background-color: var(--secondary);
       opacity: 0.8;
   }
-  /* .right-side input{
-      display: var(--dflex);
-      flex-direction: column;
-      position: absolute;
-      top: 148px;
-      left: 28px;
-      width: 60%;
-      transition: all 0.5s ease;
-  }
-  .middle-nav ul {
-      background-color: var(--secondary);
-      display: var(--dflex);
-      flex-direction: column;
-      position: absolute;
-      top: 205px;
-      left: -500px;
-      width: 100%;
-      transition: all 0.5s ease;
-      padding-bottom: 25px;
-  }
-  
-  #chk:checked ~ .middle-nav ul{
-      left: 0px;
-  } */
 
    .middle-nav{
     width: 100%;

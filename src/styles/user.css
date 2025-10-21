@@ -8,7 +8,8 @@
 /* Register.css */
 
 .user-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  padding-bottom: 5rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
   font-family: "Poppins", sans-serif;
   text-align: center;
