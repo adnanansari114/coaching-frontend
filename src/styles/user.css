@@ -17,10 +17,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-.user-container{
-  padding-top: 30px ;
-}
 .user-form {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.15);
@@ -41,6 +37,7 @@
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 1px;
+  padding-top: 24px;
 }
 
 .user-form input,
